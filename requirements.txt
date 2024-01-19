@@ -1,4 +1,4 @@
-Flask-Bootstrap==3.3.7.1
+Bootstrap-Flask
 Flask
 Flask_CKEditor
 Flask_Login
@@ -9,3 +9,4 @@ WTForms
 Werkzeug==2.3.6
 SQLAlchemy
 gunicorn==21.2.0
+python-dotenv
