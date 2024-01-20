@@ -43,7 +43,7 @@ def load_user(user_id):
     return db.get_or_404(User, user_id)
 
 # CONNECT TO DB
-if os.enviorn.get("LOCAL") == "True":
+if os.environ.get("LOCAL") == "True":
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 else:
     app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
