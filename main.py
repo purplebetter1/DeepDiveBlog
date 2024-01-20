@@ -46,7 +46,7 @@ def load_user(user_id):
 if os.environ.get("LOCAL") == "True":
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 else:
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI", "sqlite:///posts.db")
